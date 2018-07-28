@@ -34,8 +34,8 @@ def new_report(testreport):
     return file_new
 
 if __name__ == '__main__':
-    test_dir = r'C:\Users\16033\Desktop\lizhengtest\project'
-    test_report = r'C:\Users\16033\Desktop\lizhengtest\project\report'
+    test_dir = r'project'
+    test_report = r'report'
     discover = unittest.defaultTestLoader.discover(test_dir, pattern='test*.py')
     now = time.strftime("%Y-%m-%d %H_%M_%S")
     fp = open( test_report + '\\' + now + '云课登录测试报告.html', 'wb')#============================================================================
